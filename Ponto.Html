@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quiz por módulos — Guia de Segurança: Ataque de Força Bruta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><small>CIÊNCIA DA COMPUTAÇÃO · UFT</small><h1>Quiz por módulos: Ataque de Força Bruta</h1><p>7 módulos do guia, 5 perguntas em cada um.</p></div>
+  <div class="bar"><span id="pb"></span></div>
+  <div class="panel">
+
+    <!-- INÍCIO / MENU -->
+    <div id="home">
+      <div class="say" id="hello"><div class="av">🛡️</div><div class="bub">Oi! Que bom ter você por aqui. 👋<br>Aqui o quiz é dividido <b>por módulo</b>, com <b>5 perguntas em cada um</b>. Você pode seguir a ordem do guia ou escolher o módulo que quiser revisar. Sem pressão: se errar, eu explico com calma. 😉
+        <input class="name" id="nm" type="text" maxlength="30" placeholder="Como posso te chamar? (opcional)" autocomplete="off"></div></div>
+      <div class="prog" id="prog"></div>
+      <div class="mods" id="mods"></div>
+      <div class="btns"><button class="btn" id="seq">▶ Fazer todos em sequência</button></div>
+    </div>
+
+    <!-- PERGUNTAS -->
+    <div id="game" class="hidden">
+      <div class="meta"><span id="num"></span><span id="sc"></span></div>
+      <div class="mod" id="mod"></div>
+      <div class="q" id="q"></div>
+      <div class="opts" id="opts"></div>
+      <div class="fb" id="fb"></div>
+      <button class="btn hidden" id="next">Próxima</button>
+    </div>
+
+    <!-- RESULTADO DO MÓDULO -->
+    <div id="round" class="hidden center">
+      <div class="mod" id="rmod"></div>
+      <div class="score" id="rscore"></div>
+      <div class="stars" id="rstars"></div>
+      <div class="say" style="justify-content:center;text-align:left"><div class="av">🛡️</div><div class="bub" id="rmsg"></div></div>
+      <div class="rev" id="rrev"></div>
+      <div class="btns" id="rbtns"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="scrypt.js"></script>
+</body>
+</html>
